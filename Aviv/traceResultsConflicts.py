@@ -1,6 +1,6 @@
 import json
 from datetime import datetime
-
+#line for push
 def find_conflicts(trace_data):
     conflicts = []
     for i in range(len(trace_data) - 1):

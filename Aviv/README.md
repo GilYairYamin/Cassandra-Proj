@@ -12,4 +12,4 @@ this file will look through the given json file for conflicts according to a giv
 
 python traceResultsConflicts.py 
 
-The will take in a file called traceResults.json and will look for any conflicts within the file and will store the results in a file called traceResultsConflicts.json.
+The will take in a file called traceResults.json and will look for any conflicts within the file and will store the results in a file called traceResultsConflicts.json .
