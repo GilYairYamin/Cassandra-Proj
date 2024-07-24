@@ -3,7 +3,8 @@ import os
 
 # Configuration embedded in the script
 config = {
-    "executable_path": "/path/to/your/executable",
+    "yaml-file":"./stress-profile.yaml",
+    "executable_path": "/usr/bin/cassandra-stress",
     "parameters": ["param1", "param2", "param3"]
 }
 
