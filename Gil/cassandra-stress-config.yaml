@@ -1,0 +1,22 @@
+cassandra_stress_config:
+  command: cassandra-stress
+  mode: user
+  duration: 1m
+  profile: ./stress-profile.yaml
+  ops: singlepost=1,regularupdate=1,updatewithlwt=1
+  cl: ONE
+  n: 100000
+  no-warmup: false
+  pop:
+    seq: 1..100000
+  node:
+    - 62.90.89.27
+    - 62.90.89.28
+    - 62.90.89.29
+    - 62.90.89.39
+  # log:
+  #   file: stress_output.log
+  #   level: verbose
+  rate:
+    threads: 20
+  # send-to: 62.90.89.28
