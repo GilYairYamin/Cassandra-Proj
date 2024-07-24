@@ -23,7 +23,7 @@ def execute_command(command, session):
 
     try:
         # Retrieve query trace
-        trace = res.get_query_trace(max_wait_sec=1)
+        trace = res.get_query_trace(max_wait_sec=10)
         
         # Initialize variables to capture timestamps
         coordinator_timestamp = None

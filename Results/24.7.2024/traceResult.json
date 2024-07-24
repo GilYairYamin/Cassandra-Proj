@@ -1,0 +1,478 @@
+{
+    "traceResults": [
+        [
+            1,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri1', {'1':toTimestamp(now())});",
+            "2024-07-24 16:53:12.272002",
+            null
+        ],
+        [
+            2,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri2', {'2':toTimestamp(now())});",
+            "2024-07-24 16:53:12.272002",
+            null
+        ],
+        [
+            3,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri3', {'3':toTimestamp(now())});",
+            "2024-07-24 16:53:12.270000",
+            "2024-07-24 16:53:12.270000"
+        ],
+        [
+            4,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri4', {'4':toTimestamp(now())});",
+            "2024-07-24 16:53:12.270001",
+            "2024-07-24 16:53:12.273000"
+        ],
+        [
+            5,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri5', {'5':toTimestamp(now())});",
+            "2024-07-24 16:53:12.272002",
+            null
+        ],
+        [
+            6,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri6', {'6':toTimestamp(now())});",
+            "2024-07-24 16:53:12.271001",
+            "2024-07-24 16:53:12.271000"
+        ],
+        [
+            7,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri7', {'7':toTimestamp(now())});",
+            "2024-07-24 16:53:12.271001",
+            "2024-07-24 16:53:12.274000"
+        ],
+        [
+            8,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri8', {'8':toTimestamp(now())});",
+            "2024-07-24 16:53:12.271001",
+            "2024-07-24 16:53:12.273000"
+        ],
+        [
+            9,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri9', {'9':toTimestamp(now())});",
+            "2024-07-24 16:53:12.272000",
+            "2024-07-24 16:53:12.274001"
+        ],
+        [
+            10,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri10', {'10':toTimestamp(now())});",
+            "2024-07-24 16:53:12.272001",
+            "2024-07-24 16:53:12.274000"
+        ],
+        [
+            12,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri12', {'12':toTimestamp(now())});",
+            "2024-07-24 16:53:12.273000",
+            "2024-07-24 16:53:12.275000"
+        ],
+        [
+            13,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri13', {'13':toTimestamp(now())});",
+            "2024-07-24 16:53:12.277000",
+            null
+        ],
+        [
+            14,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri14', {'14':toTimestamp(now())});",
+            "2024-07-24 16:53:12.276000",
+            "2024-07-24 16:53:12.276000"
+        ],
+        [
+            15,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri15', {'15':toTimestamp(now())});",
+            "2024-07-24 16:53:12.280000",
+            null
+        ],
+        [
+            16,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri16', {'16':toTimestamp(now())});",
+            "2024-07-24 16:53:12.280001",
+            "2024-07-24 16:53:12.280001"
+        ],
+        [
+            17,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri17', {'17':toTimestamp(now())});",
+            "2024-07-24 16:53:12.282000",
+            null
+        ],
+        [
+            18,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri18', {'18':toTimestamp(now())});",
+            "2024-07-24 16:53:12.284000",
+            "2024-07-24 16:53:12.284000"
+        ],
+        [
+            19,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri19', {'19':toTimestamp(now())});",
+            "2024-07-24 16:53:12.300001",
+            "2024-07-24 16:53:12.300000"
+        ],
+        [
+            20,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri20', {'20':toTimestamp(now())});",
+            "2024-07-24 16:53:12.301001",
+            "2024-07-24 16:53:12.302001"
+        ],
+        [
+            21,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri21', {'21':toTimestamp(now())});",
+            "2024-07-24 16:53:12.300001",
+            "2024-07-24 16:53:12.300001"
+        ],
+        [
+            22,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri22', {'22':toTimestamp(now())});",
+            "2024-07-24 16:53:12.301001",
+            "2024-07-24 16:53:12.304000"
+        ],
+        [
+            23,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri23', {'23':toTimestamp(now())});",
+            "2024-07-24 16:53:12.301000",
+            "2024-07-24 16:53:12.302001"
+        ],
+        [
+            24,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri24', {'24':toTimestamp(now())});",
+            "2024-07-24 16:53:12.310000",
+            "2024-07-24 16:53:12.312000"
+        ],
+        [
+            25,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri25', {'25':toTimestamp(now())});",
+            "2024-07-24 16:53:12.313000",
+            "2024-06-06 07:02:10.615000"
+        ],
+        [
+            26,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri26', {'26':toTimestamp(now())});",
+            "2024-07-24 16:53:12.312001",
+            "2024-07-24 16:53:12.312001"
+        ],
+        [
+            27,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri27', {'27':toTimestamp(now())});",
+            "2024-07-24 16:53:12.315001",
+            "2024-07-24 16:53:12.315000"
+        ],
+        [
+            28,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri28', {'28':toTimestamp(now())});",
+            "2024-07-24 16:53:12.322000",
+            null
+        ],
+        [
+            29,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri29', {'29':toTimestamp(now())});",
+            "2024-07-24 16:53:12.326000",
+            "2024-07-24 16:53:12.323000"
+        ],
+        [
+            30,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri30', {'30':toTimestamp(now())});",
+            "2024-07-24 16:53:12.326001",
+            "2024-07-24 16:53:12.325000"
+        ],
+        [
+            31,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri31', {'31':toTimestamp(now())});",
+            "2024-07-24 16:53:12.327000",
+            null
+        ],
+        [
+            32,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri32', {'32':toTimestamp(now())});",
+            "2024-07-24 16:53:12.338001",
+            "2024-07-24 16:53:12.338001"
+        ],
+        [
+            33,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri33', {'33':toTimestamp(now())});",
+            "2024-07-24 16:53:12.326000",
+            "2024-07-24 16:53:12.327000"
+        ],
+        [
+            34,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri34', {'34':toTimestamp(now())});",
+            "2024-07-24 16:53:12.328001",
+            "2024-07-24 16:53:12.329000"
+        ],
+        [
+            35,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri35', {'35':toTimestamp(now())});",
+            "2024-07-24 16:53:12.328000",
+            null
+        ],
+        [
+            36,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri36', {'36':toTimestamp(now())});",
+            "2024-07-24 16:53:12.338001",
+            "2024-07-24 16:53:12.338001"
+        ],
+        [
+            37,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri37', {'37':toTimestamp(now())});",
+            "2024-07-24 16:53:12.327001",
+            "2024-07-24 16:53:12.330000"
+        ],
+        [
+            38,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri38', {'38':toTimestamp(now())});",
+            "2024-07-24 16:53:12.328001",
+            "2024-07-24 16:53:12.329001"
+        ],
+        [
+            39,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri39', {'39':toTimestamp(now())});",
+            "2024-07-24 16:53:12.327003",
+            null
+        ],
+        [
+            40,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri40', {'40':toTimestamp(now())});",
+            "2024-07-24 16:53:12.338003",
+            "2024-07-24 16:53:12.338003"
+        ],
+        [
+            41,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri41', {'41':toTimestamp(now())});",
+            "2024-07-24 16:53:12.327002",
+            "2024-07-24 16:53:12.330001"
+        ],
+        [
+            42,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri42', {'42':toTimestamp(now())});",
+            "2024-07-24 16:53:12.328001",
+            "2024-07-24 16:53:12.329001"
+        ],
+        [
+            43,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri43', {'43':toTimestamp(now())});",
+            "2024-07-24 16:53:12.327002",
+            null
+        ],
+        [
+            44,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri44', {'44':toTimestamp(now())});",
+            "2024-07-24 16:53:12.338003",
+            "2024-07-24 16:53:12.338003"
+        ],
+        [
+            45,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri45', {'45':toTimestamp(now())});",
+            "2024-07-24 16:53:12.327002",
+            "2024-07-24 16:53:12.330001"
+        ],
+        [
+            46,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri46', {'46':toTimestamp(now())});",
+            "2024-07-24 16:53:12.328002",
+            "2024-07-24 16:53:12.329002"
+        ],
+        [
+            47,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri47', {'47':toTimestamp(now())});",
+            "2024-07-24 16:53:12.338004",
+            "2024-07-24 16:53:12.338004"
+        ],
+        [
+            48,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri48', {'48':toTimestamp(now())});",
+            "2024-07-24 16:53:12.332000",
+            "2024-07-24 16:53:12.334000"
+        ],
+        [
+            49,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri49', {'49':toTimestamp(now())});",
+            "2024-07-24 16:53:12.332001",
+            null
+        ],
+        [
+            50,
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri50', {'50':toTimestamp(now())});",
+            "2024-07-24 16:53:12.338000",
+            "2024-07-24 16:53:12.340000"
+        ],
+        [
+            51,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil51', toTS['51'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.337000",
+            "2024-07-24 16:53:12.338000"
+        ],
+        [
+            52,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil52', toTS['52'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.339000",
+            null
+        ],
+        [
+            53,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil53', toTS['53'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.342001",
+            "2024-07-24 16:53:12.343000"
+        ],
+        [
+            54,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil54', toTS['54'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.342000",
+            null
+        ],
+        [
+            55,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil55', toTS['55'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.355000",
+            "2024-07-24 16:53:12.355000"
+        ],
+        [
+            56,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil56', toTS['56'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.359000",
+            "2024-07-24 16:53:12.361000"
+        ],
+        [
+            57,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil57', toTS['57'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.357000",
+            "2024-07-24 16:53:12.358001"
+        ],
+        [
+            58,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil58', toTS['58'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.362001",
+            "2024-07-24 16:53:12.362000"
+        ],
+        [
+            59,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil59', toTS['59'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.364000",
+            "2024-07-24 16:53:12.365000"
+        ],
+        [
+            60,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil60', toTS['60'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.364001",
+            "2024-07-24 16:53:12.364001"
+        ],
+        [
+            61,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil61', toTS['61'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.365000",
+            "2024-07-24 16:53:12.365000"
+        ],
+        [
+            62,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil62', toTS['62'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.370000",
+            "2024-07-24 16:53:12.372000"
+        ],
+        [
+            63,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil63', toTS['63'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.371000",
+            "2024-07-24 16:53:12.373000"
+        ],
+        [
+            64,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil64', toTS['64'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.367000",
+            null
+        ],
+        [
+            65,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil65', toTS['65'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.371001",
+            "2024-07-24 16:53:12.372001"
+        ],
+        [
+            66,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil66', toTS['66'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.368000",
+            null
+        ],
+        [
+            67,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil67', toTS['67'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.373000",
+            "2024-07-24 16:53:12.372001"
+        ],
+        [
+            68,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil68', toTS['68'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.370001",
+            null
+        ],
+        [
+            69,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil69', toTS['69'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.373001",
+            "2024-07-24 16:53:12.375000"
+        ],
+        [
+            70,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil70', toTS['70'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.371002",
+            null
+        ],
+        [
+            71,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil71', toTS['71'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.371001",
+            "2024-07-24 16:53:12.371001"
+        ],
+        [
+            72,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil72', toTS['72'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.379001",
+            "2024-07-24 16:53:12.379000"
+        ],
+        [
+            73,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil73', toTS['73'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.385000",
+            "2024-07-24 16:53:12.387000"
+        ],
+        [
+            74,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil74', toTS['74'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.391000",
+            "2024-07-24 16:53:12.393000"
+        ],
+        [
+            75,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil75', toTS['75'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.393000",
+            "2024-07-24 16:53:12.396000"
+        ],
+        [
+            76,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil76', toTS['76'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.397000",
+            null
+        ],
+        [
+            77,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil77', toTS['77'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.398000",
+            "2024-07-24 16:53:12.399000"
+        ],
+        [
+            78,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil78', toTS['78'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.399000",
+            "2024-06-06 07:02:10.701000"
+        ],
+        [
+            79,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil79', toTS['79'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.399000",
+            "2024-07-24 16:53:12.398001"
+        ],
+        [
+            80,
+            "UPDATE simpletry.person SET name = 'Aviv/Gil80', toTS['80'] = toTimestamp(now()) WHERE id = '208306068';",
+            "2024-07-24 16:53:12.406000",
+            "2024-07-24 16:53:12.408000"
+        ]
+    ]
+}
