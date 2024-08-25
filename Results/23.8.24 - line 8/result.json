@@ -1,0 +1,560 @@
+{
+    "queries_and_times": [
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri1', {'1':toTimestamp(now())}) USING TIMESTAMP 1;",
+            "2024-08-23T10:55:34.041749"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri2', {'2':toTimestamp(now())}) USING TIMESTAMP 2;",
+            "2024-08-23T10:55:34.044987"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri3', {'3':toTimestamp(now())}) USING TIMESTAMP 3;",
+            "2024-08-23T10:55:34.052448"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri4', {'4':toTimestamp(now())}) USING TIMESTAMP 4;",
+            "2024-08-23T10:55:34.059147"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri5', {'5':toTimestamp(now())}) USING TIMESTAMP 5;",
+            "2024-08-23T10:55:34.065625"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri6', {'6':toTimestamp(now())}) USING TIMESTAMP 6;",
+            "2024-08-23T10:55:34.071979"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri7', {'7':toTimestamp(now())}) USING TIMESTAMP 7;",
+            "2024-08-23T10:55:34.078664"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri8', {'8':toTimestamp(now())}) USING TIMESTAMP 8;",
+            "2024-08-23T10:55:34.085302"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri9', {'9':toTimestamp(now())}) USING TIMESTAMP 9;",
+            "2024-08-23T10:55:34.099382"
+        ],
+        [
+            "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri10', {'10':toTimestamp(now())}) USING TIMESTAMP 10;",
+            "2024-08-23T10:55:34.107979"
+        ]
+    ],
+    "traces": [
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.035000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.035000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri1', {'1':toTimestamp(now())}) USING TIMESTAMP 1;",
+                    "source": "62.90.89.28",
+                    "source_elapsed": "0:00:00.000064",
+                    "thread_name": "Native-Transport-Requests-12"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.035000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.28",
+                    "source_elapsed": "0:00:00.000131",
+                    "thread_name": "Native-Transport-Requests-12"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.035000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.28",
+                    "source_elapsed": "0:00:00.000318",
+                    "thread_name": "Native-Transport-Requests-12"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.037000",
+                    "description": "Sending MUTATION message to /62.90.89.29",
+                    "source": "62.90.89.28",
+                    "source_elapsed": "0:00:00.002518",
+                    "thread_name": "MessagingService-Outgoing-/62.90.89.29-Small"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "REQUEST_RESPONSE message received from /62.90.89.29",
+                    "source": "62.90.89.28",
+                    "source_elapsed": "0:00:00.003009",
+                    "thread_name": "MessagingService-Incoming-/62.90.89.29"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "MUTATION message received from /62.90.89.28",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000004",
+                    "thread_name": "MessagingService-Incoming-/62.90.89.28"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "Processing response from /62.90.89.29",
+                    "source": "62.90.89.28",
+                    "source_elapsed": "0:00:00.003113",
+                    "thread_name": "RequestResponseStage-10"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000071",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000142",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "Enqueuing response to /62.90.89.28",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000197",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.038000",
+                    "description": "Sending REQUEST_RESPONSE message to /62.90.89.28",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000223",
+                    "thread_name": "MessagingService-Outgoing-/62.90.89.28-Small"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.035000",
+            "memtable_timestamp": "2024-08-23T07:55:34.038000",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri1', {'1':toTimestamp(now())}) USING TIMESTAMP 1;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.046000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.042000",
+                    "description": "MUTATION message received from /62.90.89.39",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000001",
+                    "thread_name": "MessagingService-Incoming-/62.90.89.39"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.042000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000030",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.042000",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000047",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.042000",
+                    "description": "Enqueuing response to /62.90.89.39",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000064",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.042000",
+                    "description": "Sending REQUEST_RESPONSE message to /62.90.89.39",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000083",
+                    "thread_name": "MessagingService-Outgoing-/62.90.89.39-Small"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.046000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri2', {'2':toTimestamp(now())}) USING TIMESTAMP 2;",
+                    "source": "62.90.89.39",
+                    "source_elapsed": "0:00:00.000064",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.046000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.39",
+                    "source_elapsed": "0:00:00.000148",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.046000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.39",
+                    "source_elapsed": "0:00:00.000354",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.046000",
+                    "description": "Sending MUTATION message to /62.90.89.29",
+                    "source": "62.90.89.39",
+                    "source_elapsed": "0:00:00.000401",
+                    "thread_name": "MessagingService-Outgoing-/62.90.89.29-Small"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.046001",
+                    "description": "REQUEST_RESPONSE message received from /62.90.89.29",
+                    "source": "62.90.89.39",
+                    "source_elapsed": "0:00:00.000632",
+                    "thread_name": "MessagingService-Incoming-/62.90.89.29"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.046001",
+                    "description": "Processing response from /62.90.89.29",
+                    "source": "62.90.89.39",
+                    "source_elapsed": "0:00:00.000659",
+                    "thread_name": "RequestResponseStage-3"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.046000",
+            "memtable_timestamp": "2024-08-23T07:55:34.042000",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri2', {'2':toTimestamp(now())}) USING TIMESTAMP 2;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.045000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.045000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri3', {'3':toTimestamp(now())}) USING TIMESTAMP 3;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000038",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.045000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000106",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.045000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000326",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.045000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000363",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.045001",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000380",
+                    "thread_name": "MutationStage-1"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.045000",
+            "memtable_timestamp": "2024-08-23T07:55:34.045001",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri3', {'3':toTimestamp(now())}) USING TIMESTAMP 3;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.053000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.052000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri4', {'4':toTimestamp(now())}) USING TIMESTAMP 4;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000019",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.052000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000049",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.053000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000104",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.053000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000132",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.053000",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000146",
+                    "thread_name": "MutationStage-1"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.052000",
+            "memtable_timestamp": "2024-08-23T07:55:34.053000",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri4', {'4':toTimestamp(now())}) USING TIMESTAMP 4;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.059000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.059000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri5', {'5':toTimestamp(now())}) USING TIMESTAMP 5;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000020",
+                    "thread_name": "Native-Transport-Requests-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.059000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000062",
+                    "thread_name": "Native-Transport-Requests-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.059000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000129",
+                    "thread_name": "Native-Transport-Requests-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.059000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000166",
+                    "thread_name": "MutationStage-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.059000",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000280",
+                    "thread_name": "MutationStage-2"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.059000",
+            "memtable_timestamp": "2024-08-23T07:55:34.059000",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri5', {'5':toTimestamp(now())}) USING TIMESTAMP 5;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.066000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.066000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri6', {'6':toTimestamp(now())}) USING TIMESTAMP 6;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000019",
+                    "thread_name": "Native-Transport-Requests-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.066000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000048",
+                    "thread_name": "Native-Transport-Requests-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.066000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000099",
+                    "thread_name": "Native-Transport-Requests-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.066000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000166",
+                    "thread_name": "MutationStage-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.066001",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000181",
+                    "thread_name": "MutationStage-2"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.066000",
+            "memtable_timestamp": "2024-08-23T07:55:34.066001",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri6', {'6':toTimestamp(now())}) USING TIMESTAMP 6;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.072001",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.072000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri7', {'7':toTimestamp(now())}) USING TIMESTAMP 7;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000082",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.072000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000133",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.072001",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000229",
+                    "thread_name": "Native-Transport-Requests-2"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.072001",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000257",
+                    "thread_name": "MutationStage-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.072001",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000278",
+                    "thread_name": "MutationStage-4"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.072000",
+            "memtable_timestamp": "2024-08-23T07:55:34.072001",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri7', {'7':toTimestamp(now())}) USING TIMESTAMP 7;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.079000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.079000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri8', {'8':toTimestamp(now())}) USING TIMESTAMP 8;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000020",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.079000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000051",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.079000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000118",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.079000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000137",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.079001",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000147",
+                    "thread_name": "Native-Transport-Requests-4"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.079000",
+            "memtable_timestamp": "2024-08-23T07:55:34.079001",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri8', {'8':toTimestamp(now())}) USING TIMESTAMP 8;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.085001",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.085000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri9', {'9':toTimestamp(now())}) USING TIMESTAMP 9;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000021",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.085000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000054",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.085001",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000110",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.085001",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000131",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.085001",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000142",
+                    "thread_name": "MutationStage-1"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.085000",
+            "memtable_timestamp": "2024-08-23T07:55:34.085001",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri9', {'9':toTimestamp(now())}) USING TIMESTAMP 9;"
+        },
+        {
+            "coordinator_timestamp": "2024-08-23T07:55:34.100000",
+            "details": [
+                {
+                    "datetime": "2024-08-23T07:55:34.099000",
+                    "description": "Parsing INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri10', {'10':toTimestamp(now())}) USING TIMESTAMP 10;",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000020",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.099000",
+                    "description": "Preparing statement",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000052",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.100000",
+                    "description": "Determining replicas for mutation",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000147",
+                    "thread_name": "Native-Transport-Requests-4"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.100000",
+                    "description": "Appending to commitlog",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000168",
+                    "thread_name": "MutationStage-1"
+                },
+                {
+                    "datetime": "2024-08-23T07:55:34.100000",
+                    "description": "Adding to person memtable",
+                    "source": "62.90.89.29",
+                    "source_elapsed": "0:00:00.000179",
+                    "thread_name": "MutationStage-1"
+                }
+            ],
+            "launched_at": "2024-08-23T07:55:34.099000",
+            "memtable_timestamp": "2024-08-23T07:55:34.100000",
+            "query": "INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri10', {'10':toTimestamp(now())}) USING TIMESTAMP 10;"
+        }
+    ]
+}

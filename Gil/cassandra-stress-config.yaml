@@ -3,7 +3,10 @@ cassandra_stress_config:
   mode: user
   duration: 1m
   profile: ./stress-profile.yaml
-  ops: singlepost=1,regularupdate=1,updatewithlwt=1
+  ops:
+    singlepost: 1
+    regularupdate: 1
+    updatewithlwt: 1
   cl: ONE
   n: 100000
   no-warmup: false

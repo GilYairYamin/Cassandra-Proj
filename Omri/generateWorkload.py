@@ -12,29 +12,33 @@ def generate_workload(num_inserts=10, num_updates=5, num_deletes=5, mix_commands
     global workload_commands
     person_id = 208306068
     current_number = 0
+    timestamp_counter = 1  # Start the counter at 1
 
     # Generate insert commands
     for i in range(1, num_inserts + 1):
         person_name = f'omri{i}'
         time_stamp_id = f'{i}'
-        command = f"INSERT INTO simpletry.person (id, name, toTS) VALUES ('{person_id}', '{person_name}', {{'{time_stamp_id}':toTimestamp(now())}});"
+        command = f"INSERT INTO simpletry.person (id, name, toTS) VALUES ('{person_id}', '{person_name}', {{'{time_stamp_id}':toTimestamp(now())}}) USING TIMESTAMP {timestamp_counter};"
         workload_commands.append(command)
         current_number = i
+        timestamp_counter += 1  # Increment the counter
 
     # Generate update commands starting from the next number
     for i in range(1, num_updates + 1):
         person_name = f'Aviv/Gil{current_number + i}'
         time_stamp_id = f'{current_number + i}'
-        command = f"UPDATE simpletry.person SET name = '{person_name}', toTS['{time_stamp_id}'] = toTimestamp(now()) WHERE id = '{person_id}';"
+        command = f"UPDATE simpletry.person SET name = '{person_name}', toTS['{time_stamp_id}'] = toTimestamp(now()) WHERE id = '{person_id}' USING TIMESTAMP {timestamp_counter};"
         workload_commands.append(command)
+        timestamp_counter += 1  # Increment the counter
 
     current_number += num_updates
 
     # Generate delete commands starting from the next number
     for i in range(1, num_deletes + 1):
         time_stamp_id = f'{current_number + i}'
-        command = f"DELETE toTS['{time_stamp_id}'] FROM simpletry.person WHERE id = '{person_id}';"
+        command = f"DELETE toTS['{time_stamp_id}'] FROM simpletry.person WHERE id = '{person_id}' USING TIMESTAMP {timestamp_counter};"
         workload_commands.append(command)
+        timestamp_counter += 1  # Increment the counter
 
     # Mix commands if the option is enabled
     if mix_commands:
@@ -59,7 +63,7 @@ if __name__ == "__main__":
     session.execute("CREATE TABLE IF NOT EXISTS person (id text, name text, toTS MAP<text,timestamp>, PRIMARY KEY (id));")
 
     # Generate workload commands with specified numbers and mix option
-    generate_workload(num_inserts=50, num_updates=30, num_deletes=0, mix_commands=False)
+    generate_workload(num_inserts=10, num_updates=0, num_deletes=0, mix_commands=False)
 
     # Save workload commands to a file
     save_workload_to_file('workload_commands.txt')
