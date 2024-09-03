@@ -1,0 +1,100 @@
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri1', {'1':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri2', {'2':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri3', {'3':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri4', {'4':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri5', {'5':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri6', {'6':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri7', {'7':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri8', {'8':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri9', {'9':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri10', {'10':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri11', {'11':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri12', {'12':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri13', {'13':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri14', {'14':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri15', {'15':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri16', {'16':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri17', {'17':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri18', {'18':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri19', {'19':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri20', {'20':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri21', {'21':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri22', {'22':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri23', {'23':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri24', {'24':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri25', {'25':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri26', {'26':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri27', {'27':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri28', {'28':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri29', {'29':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri30', {'30':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri31', {'31':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri32', {'32':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri33', {'33':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri34', {'34':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri35', {'35':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri36', {'36':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri37', {'37':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri38', {'38':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri39', {'39':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri40', {'40':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri41', {'41':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri42', {'42':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri43', {'43':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri44', {'44':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri45', {'45':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri46', {'46':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri47', {'47':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri48', {'48':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri49', {'49':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri50', {'50':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri51', {'51':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri52', {'52':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri53', {'53':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri54', {'54':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri55', {'55':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri56', {'56':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri57', {'57':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri58', {'58':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri59', {'59':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri60', {'60':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri61', {'61':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri62', {'62':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri63', {'63':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri64', {'64':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri65', {'65':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri66', {'66':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri67', {'67':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri68', {'68':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri69', {'69':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri70', {'70':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri71', {'71':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri72', {'72':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri73', {'73':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri74', {'74':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri75', {'75':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri76', {'76':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri77', {'77':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri78', {'78':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri79', {'79':toTimestamp(now())})
+INSERT INTO simpletry.person (id, name, toTS) VALUES ('208306068', 'omri80', {'80':toTimestamp(now())})
+UPDATE simpletry.person SET name = 'Aviv/Gil81', toTS['81'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil82', toTS['82'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil83', toTS['83'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil84', toTS['84'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil85', toTS['85'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil86', toTS['86'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil87', toTS['87'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil88', toTS['88'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil89', toTS['89'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil90', toTS['90'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil91', toTS['91'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil92', toTS['92'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil93', toTS['93'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil94', toTS['94'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil95', toTS['95'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil96', toTS['96'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil97', toTS['97'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil98', toTS['98'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil99', toTS['99'] = toTimestamp(now()) WHERE id = '208306068'
+UPDATE simpletry.person SET name = 'Aviv/Gil100', toTS['100'] = toTimestamp(now()) WHERE id = '208306068'
