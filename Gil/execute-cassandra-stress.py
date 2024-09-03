@@ -1,6 +1,7 @@
 import os
 import subprocess
 import yaml
+import os
 
 normal_parameter = [
     "profile",
@@ -25,7 +26,7 @@ def build_special_parameter(config, param):
         opsArr = []
         for key in opsConfig.keys():
             opsArr.append(f"{key}={opsConfig[key]}")
-        ops = ",".joing(opsArr)
+        ops = ",".join(opsArr)
         special_param = f'"ops({ops})"'
 
     elif param == "node":
@@ -67,6 +68,7 @@ if __name__ == "__main__":
     config_file_path = "./cassandra-stress-config.yaml"
     config = read_config(config_file_path)
     init_defaults_to_config(config)
-    command = build_command(config)
+    command_array = build_command(config)
+    command = " ".join(command_array)
     
-    print(" ".join(command))
+    os.system(command)

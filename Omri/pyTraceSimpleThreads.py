@@ -108,7 +108,7 @@ def run_workload_from_file(filename, session, num_threads):
         t.join()
 
 
-if __name__ == "__main__":
+def run_trace_simple_threads():
     auth_provider = PlainTextAuthProvider(username="omrino", password="sfgs44Df")
     cluster = Cluster(
         contact_points=["62.90.89.27", "62.90.89.28", "62.90.89.29", "62.90.89.39"],
@@ -142,3 +142,7 @@ if __name__ == "__main__":
 
     session.shutdown()
     cluster.shutdown()
+
+
+if __name__ == "__main__":
+    run_trace_simple_threads()
