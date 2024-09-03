@@ -1,4 +1,5 @@
 import sys
+import os
 import importlib
 import threading
 from cassandra.cluster import Cluster
@@ -8,6 +9,7 @@ from cassandra.auth import PlainTextAuthProvider
 import json
 import random
 import datetime
+import time
 import re
 import matplotlib.pyplot as plt
 from queue import Queue
@@ -43,7 +45,7 @@ class CassandraWorkload:
             username="omrino", password="sfgs44Df"
         )
         self.cluster = Cluster(
-            contact_points=["62.90.89.27", "62.90.89.28", "62.90.89.29", "62.90.89.39"],
+            contact_points=["62.90.89.27"],
             auth_provider=self.auth_provider,
         )
         self.session = self.cluster.connect("simpletry")
@@ -54,8 +56,16 @@ class CassandraWorkload:
         self.queries_and_times = []
         self.lock = threading.Lock()
 
+        # Create result directory
+        self.res_dir_name = (
+            f'result {datetime.datetime.now().strftime("%Y-%m-%d_%H.%M.%S")}'
+        )
+        if not os.path.exists(f"./{self.res_dir_name}"):
+            os.makedirs(f"./{self.res_dir_name}")
+
     def setup_table(self):
         self.session.execute("DROP TABLE IF EXISTS simpletry.person;")
+        time.sleep(0.2)
         self.session.execute(
             "CREATE TABLE IF NOT EXISTS simpletry.person (id text, name text, toTS MAP<text,timestamp>, PRIMARY KEY (id));"
         )
@@ -187,7 +197,7 @@ class CassandraWorkload:
         # Save workload to file
         today_date = datetime.date.today().strftime("%Y%m%d")
         timestamp_str = "with_timestamp" if use_timestamp else "without_timestamp"
-        workload_filename = f"workload_commands_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.txt"
+        workload_filename = f"{self.res_dir_name}/workload_commands_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.txt"
         self.save_workload_to_file(workload_filename, workload_commands)
 
         # Execute workload
@@ -219,9 +229,8 @@ class CassandraWorkload:
             }
             final_data["traces"].append(organized_trace)
 
-        result_filename = (
-            f"result_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.json"
-        )
+        result_filename = f"{self.res_dir_name}/result_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.json"
+
         with open(result_filename, "w") as file:
             json.dump(
                 final_data,
@@ -234,9 +243,7 @@ class CassandraWorkload:
 
         # Generate conflicts.json
         conflicts = self.find_conflicts(final_data)
-        conflicts_filename = (
-            f"conflicts_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.json"
-        )
+        conflicts_filename = f"{self.res_dir_name}/conflicts_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.json"
         with open(conflicts_filename, "w") as file:
             json.dump(conflicts, file, indent=4)
 
@@ -244,7 +251,7 @@ class CassandraWorkload:
         self.create_enhanced_conflict_marked_graph(
             final_data,
             conflicts,
-            f"graph_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.png",
+            f"{self.res_dir_name}/graph_{num_inserts}i_{num_updates}u_{timestamp_str}_{today_date}.png",
         )
 
         # Drop the table
