@@ -367,9 +367,9 @@ class CassandraWorkload:
         )
         plt.figure(figsize=(14, 8))
 
-        plt.scatter(normal_times, normal_indices, color="blue", label="Normal", s=25)
+        plt.scatter(normal_times, normal_indices, color="blue", label="Normal", s=28)
         plt.scatter(
-            conflict_times, conflict_indices, color="red", label="Conflict", s=25
+            conflict_times, conflict_indices, color="red", label="Conflict", s=28
         )
 
         for i in range(len(sorted_times) - 1):
