@@ -1,5 +1,7 @@
 *.txt
 *.json
 
+new-results/
+
 !Results/**/*.txt
 !Results/**/*.json

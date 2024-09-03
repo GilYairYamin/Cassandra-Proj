@@ -356,10 +356,38 @@ class CassandraWorkload:
                 normal_times.append(timestamp)
                 normal_indices.append(index)
 
+        combined_times = normal_times + conflict_times
+        combined_indices = normal_indices + conflict_indices
+
+        combined_sorted = sorted(
+            zip(combined_times, combined_indices), key=lambda x: (x[0], x[1])
+        )
+        sorted_times, sorted_indices = (
+            zip(*combined_sorted) if combined_sorted else ([], [])
+        )
         plt.figure(figsize=(14, 8))
 
-        plt.scatter(normal_times, normal_indices, color="blue", label="Normal")
-        plt.scatter(conflict_times, conflict_indices, color="red", label="Conflict")
+        plt.scatter(normal_times, normal_indices, color="blue", label="Normal", s=25)
+        plt.scatter(
+            conflict_times, conflict_indices, color="red", label="Conflict", s=25
+        )
+
+        for i in range(len(sorted_times) - 1):
+            # Determine the color based on the next dot
+            if sorted_indices[i + 1] in conflict_indices:
+                color = "red"  # Next dot is a conflict
+            else:
+                color = "blue"  # Next dot is normal
+
+            # Plot the line segment
+            plt.plot(
+                [sorted_times[i], sorted_times[i + 1]],
+                [sorted_indices[i], sorted_indices[i + 1]],
+                color=color,
+                linestyle="-",
+                linewidth=2,
+                alpha=0.6,
+            )
 
         plt.xlabel("Time")
         plt.ylabel("Index Number")
